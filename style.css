@@ -138,22 +138,31 @@ header .arrow-down img {
   color: #808397;
 }
 
-.learn-more h1 {
+button {
+  width: 120px;
+  height: 20px;
+}
+
+button {
   font-family: Fraunces 9pt Soft;
   font-style: normal;
   font-weight: 900;
   font-size: 15px !important;
   line-height: 25px !important;
   /* identical to box height, or 167% */
+  padding: 0;
+  margin: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
+  background: transparent;
   color: #24303e;
   height: 20px;
   width: 120px;
   cursor: pointer;
+  border: 0px;
 }
 
-.learn-more h1::after {
+button::after {
   content: "LEARN MORE";
   background: #FAD400;
   opacity: 0.25;
@@ -167,7 +176,7 @@ header .arrow-down img {
   top: -15px;
 }
 
-.learn-more h1:hover::after {
+button:hover::after {
   background: #FAD400;
   opacity: 1;
   z-index: -100;
