@@ -152,7 +152,8 @@ header .arrow-down img {
   text-transform: uppercase;
   
   color: #24303e;
-
+  height: 20px;
+  width: 120px;
   cursor: pointer;
 }
 
@@ -168,12 +169,12 @@ padding: 0;
 margin: 0;
 position: relative;
 top: -15px;
-
-
 }
 .learn-more h1:hover::after {
     background: #FAD400;
     opacity: 1;
+    z-index: -100;
+    
 }
 
 .second {

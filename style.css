@@ -143,6 +143,8 @@ header .arrow-down img {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24303e;
+  height: 20px;
+  width: 120px;
   cursor: pointer;
 }
 
@@ -163,6 +165,7 @@ header .arrow-down img {
 .learn-more h1:hover::after {
   background: #FAD400;
   opacity: 1;
+  z-index: -100;
 }
 
 .second {
