@@ -96,7 +96,15 @@ header .arrow-down img {
 
   color: #24303e;
   cursor: pointer;
-}
+  }
+
+  .btn:hover {
+    background: hsla(100, 100, 100, .3);
+    color: hsla(100, 100, 100, 1);
+    
+  }
+
+
 
 // styling width for the first box after the header //
 
@@ -181,4 +189,9 @@ top: -15px;
   flex: 1;
   background: url("../sundays/images/desktop/image-transform.jpg");
   background: cover;
+}
+
+.second-container {
+display: flex;
+
 }

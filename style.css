@@ -98,6 +98,11 @@ header .arrow-down img {
   cursor: pointer;
 }
 
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
 .first-container {
   display: flex;
   flex-flow: row wrap;
@@ -172,6 +177,10 @@ header .arrow-down img {
   flex: 1;
   background: url("../sundays/images/desktop/image-transform.jpg");
   background: cover;
+}
+
+.second-container {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
