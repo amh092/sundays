@@ -1,68 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*::before , 
-*::after, 
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*::before,
+*::after,
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-li , a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    margin: 0 0 0 10px;
-    font-family: Barlow;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height, or 139% */
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 10px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
 
-letter-spacing: -0.128571px;
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 header {
-    height: 100vh;
-    min-width: 1440px;
-    background-image: url("../sundays/images/desktop/image-header.jpg"); 
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  height: 100vh;
+  min-width: 1440px;
+  background-image: url("../sundays/images/desktop/image-header.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 header nav {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 1352px;
-    margin: 32px 0 0 0 ;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1352px;
+  margin: 32px 0 0 0;
 }
 header nav ul {
-    display: inline-flex;
+  display: inline-flex;
 }
 header .arrow-down {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 1352px;
-    margin-top: 105px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1352px;
+  margin-top: 105px;
 }
 header .arrow-down h1 {
-    font-family: Fraunces;
-font-style: normal;
-font-weight: 900;
-font-size: 56px;
-line-height: 69px;
-/* identical to box height */
+  font-family: Fraunces;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  /* identical to box height */
 
-text-align: center;
-letter-spacing: 8.75px;
-text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #fff;
 }
 header .arrow-down img {
-    margin-top: 96.54px;
+  margin-top: 96.54px;
+}
+
+.btn {
+  background: white;
+  border-radius: 28px;
+  color: black;
+  height: 56px;
+  width: 140px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+
+  color: #24303e;
+  cursor: pointer;
+}
+
+// styling width for the first box after the header //
+
+.first-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 660px;
+}
+.first {
+  flex: 1;
+}
+
+.first .text-inside {
+  // width: 445px;
+  // height: 285px;
+  padding: 157px 110px 157px 157px;
+}
+
+.first .text-inside p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  white-space: pre-line;
+  /* or 167% */
+
+  letter-spacing: -0.128571px;
+
+  color: #808397;
+}
+
+.first .text-inside h1 {
+    font-family: Fraunces 9pt Soft;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    white-space: pre-line;
+    color: #24303E;
+}
+
+.learn-more h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px !important;
+  line-height: 25px !important;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #24303e;
+}
+.second {
+  flex: 1;
+  background: url("../sundays/images/desktop/image-transform.jpg");
+  background: cover;
 }

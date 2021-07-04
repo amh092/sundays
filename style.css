@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-li, a {
+li,
+a {
   list-style-type: none;
   text-decoration: none;
   color: white;
@@ -17,8 +18,14 @@ li, a {
   font-size: 18px;
   line-height: 25px;
   /* identical to box height, or 139% */
-  letter-spacing: -0.128571px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+li body,
+a body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 header {
@@ -63,11 +70,86 @@ header .arrow-down h1 {
   text-align: center;
   letter-spacing: 8.75px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 header .arrow-down img {
   margin-top: 96.54px;
+}
+
+.btn {
+  background: white;
+  border-radius: 28px;
+  color: black;
+  height: 56px;
+  width: 140px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+  color: #24303e;
+  cursor: pointer;
+}
+
+.first-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 660px;
+}
+
+.first {
+  flex: 1;
+}
+
+.first .text-inside {
+  padding: 157px 110px 157px 157px;
+}
+
+.first .text-inside p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  white-space: pre-line;
+  /* or 167% */
+  letter-spacing: -0.128571px;
+  color: #808397;
+}
+
+.first .text-inside h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+  white-space: pre-line;
+  color: #24303E;
+}
+
+.learn-more h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px !important;
+  line-height: 25px !important;
+  /* identical to box height, or 167% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303e;
+}
+
+.second {
+  flex: 1;
+  background: url("../sundays/images/desktop/image-transform.jpg");
+  background: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
