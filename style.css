@@ -114,7 +114,7 @@ header .arrow-down img {
 }
 
 .first .text-inside {
-  padding: 157px 110px 157px 157px;
+  margin: 157px 110px 157px 157px;
 }
 
 .first .text-inside h1 {
@@ -190,6 +190,18 @@ button:hover::after {
 
 .second-container {
   display: flex;
+  flex-flow: row wrap;
+  height: 660px;
+}
+
+.third {
+  flex: 1;
+  background: cover;
+  background: url("../sundays/images/desktop/image-stand-out.jpg");
+}
+
+.fourth {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
