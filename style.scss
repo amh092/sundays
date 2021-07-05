@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-repeat: no-repeat;
 }
 header nav {
   display: inline-flex;
@@ -217,52 +218,183 @@ button:hover::after {
   display: flex;
   flex-flow: row wrap;
 }
-.fifth , .sixth {
+.fifth,
+.sixth {
   height: 600px;
-  
-  
- 
 }
 
 .fifth {
   background: url("../sundays/images/desktop/image-graphic-design.jpg");
-  
-  background-size: 100% ;
+
+  background-size: 100%;
   flex: 1;
 }
 
 .sixth {
   background: url("../sundays/images/desktop/image-photography.jpg");
-  
-  background-size: 100% ;
+
+  background-size: 100%;
   flex: 1;
 }
 .centerilized-text {
   margin: 398px 190px 59px 191px;
   text-align: center;
   font-family: Fraunces 9pt Soft;
-font-style: normal;
-font-weight: 900;
-font-size: 28px;
-line-height: 35px;
-/* identical to box height */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
 
-text-align: center;
-letter-spacing: -0.2px;
+  text-align: center;
+  letter-spacing: -0.2px;
 
-color: #24554A;
+  color: #24554a;
 }
-.centerilized-text p { 
+.centerilized-text p {
   white-space: pre-line;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+
+  letter-spacing: -0.114286px;
+
+  color: #3e7467;
+}
+
+.TESTIMONIALS {
+  display: flex;
+  flex-flow: row wrap;
+  height: 457px;
+  margin: 160px 165px;
+  justify-content: space-evenly;
+}
+
+.TESTIMONIALS img {
+  border-radius: 50%;
+  height: 72px;
+  width: 72px;
+}
+
+.TESTIMONIALS > h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 5px;
+  width: 100%;
+  color: #a7aaad;
+}
+
+.TESTIMONIALS p {
+  white-space: pre-line;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  text-align: center;
+  letter-spacing: -0.128571px;
+
+  color: #5b636d;
+}
+
+.TESTIMONIALS .people {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303e;
+}
+
+.TESTIMONIALS .position {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #a7aaad;
+}
+
+.TESTIMONIALS .first-test,
+.second-test,
+.third-test {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.image-container img {
+  height: 447px;
+  min-width: 360px;
+
+}
+footer {
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+min-width: 1440px;
+height: 350px;
+left: 0px;
+top: 3824px;
+background: #90D4C6;
+}
+
+.logos {
+  width: 297px;
+  height: 206px;
+  
+  
+  border: 1px solid olive;
+}
+
+.logos ul {
+  display: inline-flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ align-items: flex-start;
+ padding: 0;
+ margin: 0;
+}
+
+.logos li a {
   font-family: Barlow;
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
-line-height: 27px;
-/* or 169% */
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
 
+letter-spacing: -0.128571px;
 
-letter-spacing: -0.114286px;
-
-color: #3E7467;
+color: #458D7E;
+padding: 0;
+margin: 0;
 }
