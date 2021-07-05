@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,900&display=swap");
 
 *::before,
 *::after,
@@ -13,7 +13,7 @@ a {
   list-style-type: none;
   text-decoration: none;
   color: white;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 23.5px;
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
@@ -26,6 +26,8 @@ a {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    min-width: 100%;
+    flex: 4;
   }
 
   color: #ffffff;
@@ -96,15 +98,12 @@ header .arrow-down img {
 
   color: #24303e;
   cursor: pointer;
-  }
+}
 
-  .btn:hover {
-    background: hsla(100, 100, 100, .3);
-    color: hsla(100, 100, 100, 1);
-    
-  }
-
-
+.btn:hover {
+  background: hsla(100, 100, 100, 0.3);
+  color: hsla(100, 100, 100, 1);
+}
 
 // styling width for the first box after the header //
 
@@ -112,29 +111,28 @@ header .arrow-down img {
   display: flex;
   flex-flow: row wrap;
   height: 660px;
-  
 }
 .first {
   flex: 1;
 }
 
-.first .text-inside {
+.text-inside {
   // width: 445px;
   // height: 285px;
   margin: 157px 110px 157px 157px;
 }
 
-.first .text-inside h1 {
-    font-family: Fraunces , serif;
-    
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 49px;
-    
-    white-space: pre-line;
-    color: #24303E;
+.text-inside h1 {
+  font-family: Fraunces, serif;
+
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+
+  white-space: pre-line;
+  color: #24303e;
 }
-.first .text-inside p {
+.text-inside p {
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
@@ -149,11 +147,6 @@ header .arrow-down img {
 }
 
 button {
-  width: 120px;
-  height: 20px;
-}
-
-button{
   font-family: Fraunces 9pt Soft;
   font-style: normal;
   font-weight: 900;
@@ -169,51 +162,107 @@ button{
   height: 20px;
   width: 120px;
   cursor: pointer;
-  border: 0px ;
+  border: 0px;
 }
 
 button::after {
-    content: "LEARN MORE";
-background: #FAD400;
-opacity: 0.25;
-border-radius: 28px;
-height: 10px;
-width: 137px;
-color: #FAD400;
-padding: 0;
-margin: 0;
-position: relative;
-top: -15px;
-
-
+  content: "LEARN MORE";
+  background: #fad400;
+  opacity: 0.25;
+  border-radius: 28px;
+  height: 10px;
+  width: 137px;
+  color: #fad400;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -15px;
 }
 button:hover::after {
-    background: #FAD400;
-    opacity: 1;
-    z-index: -100;
-    
-    
+  background: #fad400;
+  opacity: 1;
+  z-index: -100;
 }
 
 .second {
   flex: 1;
   background: url("../sundays/images/desktop/image-transform.jpg");
-  background: cover;
+  background-size: 100% 100%;
 }
 
 .second-container {
-display: flex;
-flex-flow: row wrap;
-height: 660px;
-
+  display: flex;
+  flex-flow: row wrap;
+  height: 660px;
 }
 
 .third {
   flex: 1;
-  background: cover;
+  background-size: 100% 100%;
   background: url("../sundays/images/desktop/image-stand-out.jpg");
 }
 
 .fourth {
   flex: 1;
+}
+.fourth button::after {
+  background: #fe7766;
+  color: #fe7766;
+}
+.fourth button:hover::after {
+  background: #fe7766;
+}
+
+.third-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.fifth , .sixth {
+  height: 600px;
+  
+  
+ 
+}
+
+.fifth {
+  background: url("../sundays/images/desktop/image-graphic-design.jpg");
+  
+  background-size: 100% ;
+  flex: 1;
+}
+
+.sixth {
+  background: url("../sundays/images/desktop/image-photography.jpg");
+  
+  background-size: 100% ;
+  flex: 1;
+}
+.centerilized-text {
+  margin: 398px 190px 59px 191px;
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 35px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.2px;
+
+color: #24554A;
+}
+.centerilized-text p { 
+  white-space: pre-line;
+  font-family: Barlow;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+/* or 169% */
+
+
+letter-spacing: -0.114286px;
+
+color: #3E7467;
 }

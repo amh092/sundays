@@ -12,7 +12,7 @@ a {
   list-style-type: none;
   text-decoration: none;
   color: white;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 23.5px;
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
@@ -27,6 +27,8 @@ a body {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  min-width: 100%;
+  flex: 4;
 }
 
 header {
@@ -113,20 +115,20 @@ header .arrow-down img {
   flex: 1;
 }
 
-.first .text-inside {
+.text-inside {
   margin: 157px 110px 157px 157px;
 }
 
-.first .text-inside h1 {
+.text-inside h1 {
   font-family: Fraunces, serif;
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
   white-space: pre-line;
-  color: #24303E;
+  color: #24303e;
 }
 
-.first .text-inside p {
+.text-inside p {
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
@@ -136,11 +138,6 @@ header .arrow-down img {
   /* or 167% */
   letter-spacing: -0.128571px;
   color: #808397;
-}
-
-button {
-  width: 120px;
-  height: 20px;
 }
 
 button {
@@ -164,12 +161,12 @@ button {
 
 button::after {
   content: "LEARN MORE";
-  background: #FAD400;
+  background: #fad400;
   opacity: 0.25;
   border-radius: 28px;
   height: 10px;
   width: 137px;
-  color: #FAD400;
+  color: #fad400;
   padding: 0;
   margin: 0;
   position: relative;
@@ -177,7 +174,7 @@ button::after {
 }
 
 button:hover::after {
-  background: #FAD400;
+  background: #fad400;
   opacity: 1;
   z-index: -100;
 }
@@ -185,7 +182,7 @@ button:hover::after {
 .second {
   flex: 1;
   background: url("../sundays/images/desktop/image-transform.jpg");
-  background: cover;
+  background-size: 100% 100%;
 }
 
 .second-container {
@@ -196,12 +193,68 @@ button:hover::after {
 
 .third {
   flex: 1;
-  background: cover;
+  background-size: 100% 100%;
   background: url("../sundays/images/desktop/image-stand-out.jpg");
 }
 
 .fourth {
   flex: 1;
+}
+
+.fourth button::after {
+  background: #fe7766;
+  color: #fe7766;
+}
+
+.fourth button:hover::after {
+  background: #fe7766;
+}
+
+.third-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.fifth, .sixth {
+  height: 600px;
+}
+
+.fifth {
+  background: url("../sundays/images/desktop/image-graphic-design.jpg");
+  background-size: 100%;
+  flex: 1;
+}
+
+.sixth {
+  background: url("../sundays/images/desktop/image-photography.jpg");
+  background-size: 100%;
+  flex: 1;
+}
+
+.centerilized-text {
+  margin: 398px 190px 59px 191px;
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #24554A;
+}
+
+.centerilized-text p {
+  white-space: pre-line;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  letter-spacing: -0.114286px;
+  color: #3E7467;
 }
 
 /*# sourceMappingURL=style.css.map */
