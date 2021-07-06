@@ -19,6 +19,8 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+  padding: 0;
+  margin: 0;
   /* identical to box height, or 139% */
 
   body {
@@ -53,6 +55,9 @@ header nav {
 header nav ul {
   display: inline-flex;
 }
+header nav ul li {
+  margin: calc(47px/2);
+}
 header .arrow-down {
   display: flex;
   flex-flow: column wrap;
@@ -68,17 +73,14 @@ header .arrow-down h1 {
   font-size: 56px;
   line-height: 69px;
   /* identical to box height */
-
   text-align: center;
   letter-spacing: 8.75px;
   text-transform: uppercase;
-
   color: #fff;
 }
 header .arrow-down img {
   margin-top: 96.54px;
 }
-
 .btn {
   background: white;
   border-radius: 28px;
@@ -100,14 +102,11 @@ header .arrow-down img {
   color: #24303e;
   cursor: pointer;
 }
-
 .btn:hover {
   background: hsla(100, 100, 100, 0.3);
   color: hsla(100, 100, 100, 1);
 }
-
 // styling width for the first box after the header //
-
 .first-container {
   display: flex;
   flex-flow: row wrap;
@@ -116,13 +115,11 @@ header .arrow-down img {
 .first {
   flex: 1;
 }
-
 .text-inside {
   // width: 445px;
   // height: 285px;
   margin: 157px 110px 157px 157px;
 }
-
 .text-inside h1 {
   font-family: Fraunces, serif;
 
@@ -146,7 +143,6 @@ header .arrow-down img {
 
   color: #808397;
 }
-
 button {
   font-family: Fraunces 9pt Soft;
   font-style: normal;
@@ -165,7 +161,6 @@ button {
   cursor: pointer;
   border: 0px;
 }
-
 button::after {
   content: "LEARN MORE";
   background: #fad400;
@@ -184,25 +179,21 @@ button:hover::after {
   opacity: 1;
   z-index: -100;
 }
-
 .second {
   flex: 1;
   background: url("../sundays/images/desktop/image-transform.jpg");
   background-size: 100% 100%;
 }
-
 .second-container {
   display: flex;
   flex-flow: row wrap;
   height: 660px;
 }
-
 .third {
   flex: 1;
   background-size: 100% 100%;
   background: url("../sundays/images/desktop/image-stand-out.jpg");
 }
-
 .fourth {
   flex: 1;
 }
@@ -213,7 +204,6 @@ button:hover::after {
 .fourth button:hover::after {
   background: #fe7766;
 }
-
 .third-container {
   display: flex;
   flex-flow: row wrap;
@@ -222,14 +212,12 @@ button:hover::after {
 .sixth {
   height: 600px;
 }
-
 .fifth {
   background: url("../sundays/images/desktop/image-graphic-design.jpg");
 
   background-size: 100%;
   flex: 1;
 }
-
 .sixth {
   background: url("../sundays/images/desktop/image-photography.jpg");
 
@@ -264,19 +252,18 @@ button:hover::after {
 
   color: #3e7467;
 }
-
 //  .TESTIMONIALS// 
-  .TESTIMONIALS {
-  display: flex;
-  flex-flow: row wrap;
-  height: 457px;
-  margin: 160px 165px;
-  justify-content: space-evenly;
-  }
-  .TESTIMONIALS img {
-  border-radius: 50%;
-  height: 72px;
-  width: 72px;
+.TESTIMONIALS {
+display: flex;
+flex-flow: row wrap;
+height: 457px;
+margin: 160px 165px;
+justify-content: space-evenly;
+}
+.TESTIMONIALS img {
+border-radius: 50%;
+height: 72px;
+width: 72px;
 } 
 .TESTIMONIALS > h1 {
   font-family: Fraunces 9pt Soft;
@@ -348,7 +335,7 @@ button:hover::after {
   height: 447px;
   min-width: 360px;
 }
-// end of .TESTIMONIALS // 
+// End of TESTIMONIALS //
 
 // footer styling // 
 footer {
@@ -360,14 +347,13 @@ min-width: 1440px;
 height: 350px;
 background: #90D4C6;
 }
-
 .wrapper {
   width: 297px;
   height: 206px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
 }
 footer .sundays {
@@ -378,12 +364,8 @@ footer .sundays {
   text-align: center;
 }
 
-footer .sundays img svg {
-  background: #24303e;
-}
-
 footer ul {
-  display: inline-flex;
+ display: inline-flex;
  flex-flow: row wrap;
  justify-content: space-between;
  align-items: center;
@@ -403,8 +385,21 @@ padding: 0;
 margin: 0;
 }
 
+footer li a:hover {
+  color: #fff;
+}
 .footer-images {
 display: flex;
 width: 100%;
 justify-content: space-evenly;
+align-self: flex-end;
+}
+
+footer .footer-images svg:hover {
+  cursor: pointer;
+fill: #fff;
+}
+footer .footer-images  path:hover {
+  
+fill: #fff;
 }
