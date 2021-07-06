@@ -353,37 +353,56 @@ footer {
   justify-content: center;
   min-width: 1440px;
   height: 350px;
-  left: 0px;
-  top: 3824px;
   background: #90D4C6;
 }
 
-.logos {
+.wrapper {
   width: 297px;
   height: 206px;
-  border: 1px solid olive;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.logos ul {
+footer .sundays {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+footer .sundays img svg {
+  background: #24303e;
+}
+
+footer ul {
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
-.logos li a {
+footer li a {
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height, or 139% */
   letter-spacing: -0.128571px;
   color: #458D7E;
   padding: 0;
   margin: 0;
+}
+
+.footer-images {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.css.map */

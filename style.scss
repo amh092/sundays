@@ -265,20 +265,19 @@ button:hover::after {
   color: #3e7467;
 }
 
-.TESTIMONIALS {
+//  .TESTIMONIALS// 
+  .TESTIMONIALS {
   display: flex;
   flex-flow: row wrap;
   height: 457px;
   margin: 160px 165px;
   justify-content: space-evenly;
-}
-
-.TESTIMONIALS img {
+  }
+  .TESTIMONIALS img {
   border-radius: 50%;
   height: 72px;
   width: 72px;
-}
-
+} 
 .TESTIMONIALS > h1 {
   font-family: Fraunces 9pt Soft;
   font-style: normal;
@@ -292,7 +291,6 @@ button:hover::after {
   width: 100%;
   color: #a7aaad;
 }
-
 .TESTIMONIALS p {
   white-space: pre-line;
   font-family: Barlow;
@@ -307,7 +305,6 @@ button:hover::after {
 
   color: #5b636d;
 }
-
 .TESTIMONIALS .people {
   font-family: Fraunces 9pt Soft;
   font-style: normal;
@@ -318,7 +315,6 @@ button:hover::after {
   letter-spacing: -0.128571px;
   color: #24303e;
 }
-
 .TESTIMONIALS .position {
   font-family: Barlow;
   font-style: normal;
@@ -330,7 +326,6 @@ button:hover::after {
   letter-spacing: -0.1px;
   color: #a7aaad;
 }
-
 .TESTIMONIALS .first-test,
 .second-test,
 .third-test {
@@ -339,7 +334,6 @@ button:hover::after {
   justify-content: center;
   align-items: center;
 }
-
 .image-container {
 
   display: flex;
@@ -353,8 +347,10 @@ button:hover::after {
 .image-container img {
   height: 447px;
   min-width: 360px;
-
 }
+// end of .TESTIMONIALS // 
+
+// footer styling // 
 footer {
 display: flex;
 flex-flow: row wrap;
@@ -362,39 +358,53 @@ align-items: center;
 justify-content: center;
 min-width: 1440px;
 height: 350px;
-left: 0px;
-top: 3824px;
 background: #90D4C6;
 }
 
-.logos {
+.wrapper {
   width: 297px;
   height: 206px;
-  
-  
-  border: 1px solid olive;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+footer .sundays {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
-.logos ul {
+footer .sundays img svg {
+  background: #24303e;
+}
+
+footer ul {
   display: inline-flex;
  flex-flow: row wrap;
  justify-content: space-between;
- align-items: flex-start;
+ align-items: center;
  padding: 0;
  margin: 0;
+ width: 100%;
 }
-
-.logos li a {
+footer li a {
   font-family: Barlow;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 25px;
-/* identical to box height, or 139% */
-
 letter-spacing: -0.128571px;
-
 color: #458D7E;
 padding: 0;
 margin: 0;
+}
+
+.footer-images {
+display: flex;
+width: 100%;
+justify-content: space-evenly;
 }
