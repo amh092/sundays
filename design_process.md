@@ -5,4 +5,5 @@
 
 
 
-i learned using margin is better for this design 
+i learned using margin is better than padding for this design 
+* using SVG tag with fill and hover css 
