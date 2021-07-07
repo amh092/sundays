@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,900&display=swap");
 
 *::before,
@@ -13,7 +12,7 @@ a {
   list-style-type: none;
   text-decoration: none;
   color: white;
-  margin: 0 0 0 23.5px;
+  margin: 0 0 0 1.4rem;
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
@@ -29,14 +28,13 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     min-width: 100%;
-    flex: 4;
   }
 
   color: #ffffff;
 }
 header {
   height: 100vh;
-  min-width: 1440px;
+  min-width: 18rem;
   background-image: url("../sundays/images/desktop/image-header.jpg");
   background-size: cover;
   display: flex;
@@ -49,22 +47,25 @@ header nav {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1352px;
-  margin: 32px 0 0 0;
+  width: 84.5rem;
+  margin: 2rem 0 0 0;
+
+  flex: 0 0 auto;
 }
 header nav ul {
   display: inline-flex;
+
 }
 header nav ul li {
-  margin: calc(47px/2);
+  margin: calc(2.938rem/2);
 }
 header .arrow-down {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 1352px;
-  margin-top: 105px;
+  width: 84.5rem;
+  margin-top: 6.563rem;
 }
 header .arrow-down h1 {
   font-family: Fraunces;
@@ -79,15 +80,15 @@ header .arrow-down h1 {
   color: #fff;
 }
 header .arrow-down img {
-  margin-top: 96.54px;
+  margin-top: 6.025rem;
 }
 .btn {
   background: white;
   border-radius: 28px;
   color: black;
-  height: 56px;
-  width: 140px;
-  padding: 16px 32px;
+  height: 3.5rem;
+  width: 8.75rem;
+  padding: 1rem 2rem;
   font-weight: 700;
   font-family: Fraunces 9pt Soft;
   font-style: normal;
@@ -110,7 +111,7 @@ header .arrow-down img {
 .first-container {
   display: flex;
   flex-flow: row wrap;
-  height: 660px;
+  height: 37.5rem;
 }
 .first {
   flex: 1;
@@ -400,6 +401,106 @@ footer .footer-images svg:hover {
 fill: #fff;
 }
 footer .footer-images  path:hover {
-  
 fill: #fff;
+}
+
+.disabled {
+  display: none;
+}
+.enabled {
+  visibility: visible;
+}
+
+.triangle {
+  display: none;
+}
+
+
+// mobile 
+
+@media only screen and (max-width: 376px) { 
+  body {
+    max-width: 375px;
+  }
+  header{
+   background: url("../sundays/images/mobile/image-header.jpg");
+  
+   background-size: contain;;
+  }
+  header nav {
+    max-width: 327px;
+    display: flex;
+  }
+header nav ul {
+  display: flex;
+  visibility: hidden;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 329px;
+  height: 329px;
+  background: #FFF;
+  padding: 0;
+  margin: 0;
+
+}
+
+header nav ul li a {
+  font-family: Barlow;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+width: 100%;
+letter-spacing: -0.142857px;
+padding: 0;margin: 0;
+color: #808397;
+}
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.btn{
+
+background: #FBD600;
+font-family: Fraunces 9pt Soft;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 25px;
+/* identical to box height, or 167% */
+letter-spacing: -0.107143px;
+text-transform: uppercase;
+color: #24303E;
+
+}
+.enabled {
+  visibility: visible !important;
+  animation: mymove 1s ;
+}
+.triangle {
+  display: block;
+  visibility: hidden;
+  height: 24px;
+  width : 24px;
+  background: #FFF;
+  margin-top: 26px;
+  padding: 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  position: relative;
+  left: 303px;
+  
+}
+
+}
+
+@keyframes mymove {
+  0%{
+    opacity: 0;
+  }
+  100% {
+opacity: 1;
+  }
 }
