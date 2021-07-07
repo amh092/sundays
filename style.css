@@ -440,6 +440,7 @@ footer .footer-images path:hover {
 
   header {
     background: url("../sundays/images/mobile/image-header.jpg");
+    max-width: 375px;
     background-size: contain;
   }
 
@@ -448,8 +449,24 @@ footer .footer-images path:hover {
     display: flex;
   }
 
+  header .arrow-down {
+    flex-flow: column wrap;
+    margin-top: 88px;
+  }
+
+  header .arrow-down h1 {
+    font-family: Fraunces 9pt Soft;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+  }
+
   header nav ul {
-    display: flex;
+    display: none;
     visibility: hidden;
     flex-flow: column wrap;
     justify-content: center;
@@ -494,12 +511,19 @@ footer .footer-images path:hover {
   }
 
   .enabled {
+    display: flex !important;
+    visibility: visible !important;
+    animation: mymove 1s;
+  }
+
+  .enabled-tri {
+    display: block !important;
     visibility: visible !important;
     animation: mymove 1s;
   }
 
   .triangle {
-    display: block;
+    display: none;
     visibility: hidden;
     height: 24px;
     width: 24px;

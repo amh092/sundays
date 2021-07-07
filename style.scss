@@ -424,15 +424,34 @@ fill: #fff;
   }
   header{
    background: url("../sundays/images/mobile/image-header.jpg");
-  
+   max-width: 375px;
    background-size: contain;;
   }
   header nav {
     max-width: 327px;
     display: flex;
   }
+
+  header .arrow-down {
+    flex-flow: column wrap;
+    margin-top: 88px;
+  }
+
+  .arrow-down-burger {
+    
+  }
+  header .arrow-down h1 {
+    font-family: Fraunces 9pt Soft;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 6.25px;
+text-transform: uppercase;
+  }
 header nav ul {
-  display: flex;
+  display: none;
   visibility: hidden;
   flex-flow: column wrap;
   justify-content: center;
@@ -442,7 +461,6 @@ header nav ul {
   background: #FFF;
   padding: 0;
   margin: 0;
-
 }
 
 header nav ul li a {
@@ -477,11 +495,17 @@ color: #24303E;
 
 }
 .enabled {
+  display: flex !important;
+  visibility: visible !important;
+  animation: mymove 1s ;
+}
+.enabled-tri {
+  display: block !important;
   visibility: visible !important;
   animation: mymove 1s ;
 }
 .triangle {
-  display: block;
+  display: none;
   visibility: hidden;
   height: 24px;
   width : 24px;
@@ -491,9 +515,7 @@ color: #24303E;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   position: relative;
   left: 303px;
-  
 }
-
 }
 
 @keyframes mymove {
