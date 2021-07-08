@@ -127,6 +127,12 @@ header .arrow-down img {
   align-items: center;
 }
 
+.text-inside {
+  width: 445px;
+  height: 285px;
+  margin: 157px 110px 157px 157px;
+}
+
 .text-inside h1 {
   font-family: Fraunces, serif;
   font-weight: 900;
@@ -493,91 +499,93 @@ footer .footer-images path:hover {
     top: 121px;
     left: 24px;
   }
-}
-header nav ul li a {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height, or 125% */
-  width: 100%;
-  letter-spacing: -0.142857px;
-  padding: 0;
-  margin: 0;
-  color: #808397;
-}
 
-.burger {
-  display: block;
-  cursor: pointer;
-}
+  header nav ul li a {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+    width: 100%;
+    letter-spacing: -0.142857px;
+    padding: 0;
+    margin: 0;
+    color: #808397;
+  }
 
-.btn {
-  background: #FBD600;
-  font-family: Fraunces 9pt Soft;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 25px;
-  /* identical to box height, or 167% */
-  letter-spacing: -0.107143px;
-  text-transform: uppercase;
-  color: #24303E;
-}
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
 
-.enabled {
-  display: flex !important;
-  visibility: visible !important;
-  animation: mymove 1s;
-  transition: 1s ease-in;
-}
+  .btn {
+    background: #FBD600;
+    font-family: Fraunces 9pt Soft;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+    color: #24303E;
+  }
 
-.enabled-tri {
-  display: block !important;
-  visibility: visible !important;
-  animation: mymove 1s;
-  transition: 1s ease-in;
-}
+  .enabled {
+    display: flex !important;
+    visibility: visible !important;
+    animation: mymove 1s;
+    transition: 1s ease-in;
+  }
 
-.triangle {
-  display: none;
-  visibility: hidden;
-  height: 24px;
-  width: 24px;
-  background: #FFF;
-  margin-top: 26px;
-  padding: 0;
-  clip-path: polygon(0 100%, 100% 100%, 100% 0);
-  position: absolute;
-  top: 72px;
-  left: 329px;
-}
+  .enabled-tri {
+    display: block !important;
+    visibility: visible !important;
+    animation: mymove 1s;
+    transition: 1s ease-in;
+  }
 
-.first-container {
-  flex-flow: column wrap;
-  height: calc(375px + 437px );
-}
+  .triangle {
+    display: none;
+    visibility: hidden;
+    height: 24px;
+    width: 24px;
+    background: #FFF;
+    margin-top: 26px;
+    padding: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    position: absolute;
+    top: 72px;
+    left: 329px;
+  }
 
-.first {
-  order: 2;
-}
+  .first-container {
+    flex-flow: column wrap;
+    height: calc(375px + 437px);
+  }
 
-.second {
-  order: 1;
-  background: url("../sundays/images/mobile/image-transform.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+  .first {
+    order: 2;
+  }
 
-.second-container {
-  flex-flow: column wrap;
-}
+  .second {
+    order: 1;
+    background: url("../sundays/images/mobile/image-transform.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 312px;
+    width: 375px;
+  }
 
-.third-container {
-  flex-flow: column wrap;
-}
+  .second-container {
+    flex-flow: column wrap;
+  }
 
+  .third-container {
+    flex-flow: column wrap;
+  }
+}
 @keyframes mymove {
   0% {
     opacity: 0;
