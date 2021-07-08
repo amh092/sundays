@@ -116,14 +116,15 @@ header .arrow-down img {
   display: flex;
   flex-flow: row wrap;
   height: 37.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .first {
   flex: 1;
-}
-
-.text-inside {
-  margin: 157px 110px 157px 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-inside h1 {
@@ -131,6 +132,8 @@ header .arrow-down img {
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
+  padding: 0;
+  margin: 0;
   white-space: pre-line;
   color: #24303e;
 }
@@ -205,6 +208,9 @@ button:hover::after {
 }
 
 .fourth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
 }
 
@@ -442,6 +448,7 @@ footer .footer-images path:hover {
     background: url("../sundays/images/mobile/image-header.jpg");
     max-width: 375px;
     background-size: contain;
+    height: 538px;
   }
 
   header nav {
@@ -451,7 +458,12 @@ footer .footer-images path:hover {
 
   header .arrow-down {
     flex-flow: column wrap;
-    margin-top: 88px;
+    margin: 88px 0 136px;
+    transition: 1s ease-in;
+  }
+
+  header .arrow-down svg {
+    height: 107px;
   }
 
   header .arrow-down h1 {
@@ -463,6 +475,7 @@ footer .footer-images path:hover {
     text-align: center;
     letter-spacing: 6.25px;
     text-transform: uppercase;
+    margin: 0;
   }
 
   header nav ul {
@@ -476,65 +489,95 @@ footer .footer-images path:hover {
     background: #FFF;
     padding: 0;
     margin: 0;
-  }
-
-  header nav ul li a {
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height, or 125% */
-    width: 100%;
-    letter-spacing: -0.142857px;
-    padding: 0;
-    margin: 0;
-    color: #808397;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .btn {
-    background: #FBD600;
-    font-family: Fraunces 9pt Soft;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 25px;
-    /* identical to box height, or 167% */
-    letter-spacing: -0.107143px;
-    text-transform: uppercase;
-    color: #24303E;
-  }
-
-  .enabled {
-    display: flex !important;
-    visibility: visible !important;
-    animation: mymove 1s;
-  }
-
-  .enabled-tri {
-    display: block !important;
-    visibility: visible !important;
-    animation: mymove 1s;
-  }
-
-  .triangle {
-    display: none;
-    visibility: hidden;
-    height: 24px;
-    width: 24px;
-    background: #FFF;
-    margin-top: 26px;
-    padding: 0;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0);
-    position: relative;
-    left: 303px;
+    position: absolute;
+    top: 121px;
+    left: 24px;
   }
 }
+header nav ul li a {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 125% */
+  width: 100%;
+  letter-spacing: -0.142857px;
+  padding: 0;
+  margin: 0;
+  color: #808397;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.btn {
+  background: #FBD600;
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+  color: #24303E;
+}
+
+.enabled {
+  display: flex !important;
+  visibility: visible !important;
+  animation: mymove 1s;
+  transition: 1s ease-in;
+}
+
+.enabled-tri {
+  display: block !important;
+  visibility: visible !important;
+  animation: mymove 1s;
+  transition: 1s ease-in;
+}
+
+.triangle {
+  display: none;
+  visibility: hidden;
+  height: 24px;
+  width: 24px;
+  background: #FFF;
+  margin-top: 26px;
+  padding: 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  position: absolute;
+  top: 72px;
+  left: 329px;
+}
+
+.first-container {
+  flex-flow: column wrap;
+  height: calc(375px + 437px );
+}
+
+.first {
+  order: 2;
+}
+
+.second {
+  order: 1;
+  background: url("../sundays/images/mobile/image-transform.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.second-container {
+  flex-flow: column wrap;
+}
+
+.third-container {
+  flex-flow: column wrap;
+}
+
 @keyframes mymove {
   0% {
     opacity: 0;
@@ -542,6 +585,9 @@ footer .footer-images path:hover {
   100% {
     opacity: 1;
   }
+}
+.hide-it {
+  visibility: hidden !important;
 }
 
 /*# sourceMappingURL=style.css.map */

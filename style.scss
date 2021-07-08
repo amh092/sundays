@@ -66,6 +66,7 @@ header .arrow-down {
   align-items: center;
   width: 84.5rem;
   margin-top: 6.563rem;
+  
 }
 header .arrow-down h1 {
   font-family: Fraunces;
@@ -78,6 +79,7 @@ header .arrow-down h1 {
   letter-spacing: 8.75px;
   text-transform: uppercase;
   color: #fff;
+  
 }
 header .arrow-down img {
   margin-top: 6.025rem;
@@ -112,14 +114,19 @@ header .arrow-down img {
   display: flex;
   flex-flow: row wrap;
   height: 37.5rem;
+  padding: 0;
+  margin: 0;
 }
 .first {
   flex: 1;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
 }
 .text-inside {
   // width: 445px;
   // height: 285px;
-  margin: 157px 110px 157px 157px;
+  // margin: 157px 110px 157px 157px;
 }
 .text-inside h1 {
   font-family: Fraunces, serif;
@@ -127,7 +134,8 @@ header .arrow-down img {
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
-
+padding: 0;
+margin: 0;
   white-space: pre-line;
   color: #24303e;
 }
@@ -196,6 +204,9 @@ button:hover::after {
   background: url("../sundays/images/desktop/image-stand-out.jpg");
 }
 .fourth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
 }
 .fourth button::after {
@@ -337,7 +348,6 @@ width: 72px;
   min-width: 360px;
 }
 // End of TESTIMONIALS //
-
 // footer styling // 
 footer {
 display: flex;
@@ -364,7 +374,6 @@ footer .sundays {
   width: 100%;
   text-align: center;
 }
-
 footer ul {
  display: inline-flex;
  flex-flow: row wrap;
@@ -385,7 +394,6 @@ color: #458D7E;
 padding: 0;
 margin: 0;
 }
-
 footer li a:hover {
   color: #fff;
 }
@@ -395,7 +403,6 @@ width: 100%;
 justify-content: space-evenly;
 align-self: flex-end;
 }
-
 footer .footer-images svg:hover {
   cursor: pointer;
 fill: #fff;
@@ -403,19 +410,15 @@ fill: #fff;
 footer .footer-images  path:hover {
 fill: #fff;
 }
-
 .disabled {
   display: none;
 }
 .enabled {
   visibility: visible;
 }
-
 .triangle {
   display: none;
 }
-
-
 // mobile 
 
 @media only screen and (max-width: 376px) { 
@@ -425,7 +428,8 @@ fill: #fff;
   header{
    background: url("../sundays/images/mobile/image-header.jpg");
    max-width: 375px;
-   background-size: contain;;
+   background-size: contain;
+   height: 538px;
   }
   header nav {
     max-width: 327px;
@@ -434,7 +438,14 @@ fill: #fff;
 
   header .arrow-down {
     flex-flow: column wrap;
-    margin-top: 88px;
+    margin: 88px 0 136px;
+    transition: 1s ease-in;
+   
+  }
+
+  header .arrow-down svg {
+    height: 107px;
+    
   }
 
   .arrow-down-burger {
@@ -449,6 +460,8 @@ line-height: 49px;
 text-align: center;
 letter-spacing: 6.25px;
 text-transform: uppercase;
+margin: 0;
+
   }
 header nav ul {
   display: none;
@@ -461,10 +474,16 @@ header nav ul {
   background: #FFF;
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 121px;
+  left: 24px;
+}
+
+  
 }
 
 header nav ul li a {
-  font-family: Barlow;
+font-family: Barlow;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
@@ -480,8 +499,7 @@ color: #808397;
   cursor: pointer;
 }
 
-.btn{
-
+.btn {
 background: #FBD600;
 font-family: Fraunces 9pt Soft;
 font-style: normal;
@@ -498,12 +516,15 @@ color: #24303E;
   display: flex !important;
   visibility: visible !important;
   animation: mymove 1s ;
+  transition: 1s ease-in;
 }
 .enabled-tri {
   display: block !important;
   visibility: visible !important;
   animation: mymove 1s ;
+  transition: 1s ease-in;
 }
+
 .triangle {
   display: none;
   visibility: hidden;
@@ -513,11 +534,32 @@ color: #24303E;
   margin-top: 26px;
   padding: 0;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
-  position: relative;
-  left: 303px;
+  position: absolute;
+  top: 72px;
+  left: 329px
 }
+.first-container {
+  flex-flow: column wrap;
+  height: calc(375px + 437px );
+}
+.first {
+  order: 2;
+}
+.second {
+  order: 1;
+  background: url("../sundays/images/mobile/image-transform.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+.second-container {
+  flex-flow: column wrap;
+}
+.third-container {
+  flex-flow: column wrap;
 }
 
+// # animation // 
 @keyframes mymove {
   0%{
     opacity: 0;
@@ -525,4 +567,7 @@ color: #24303E;
   100% {
 opacity: 1;
   }
+}
+.hide-it {
+  visibility: hidden !important;
 }
